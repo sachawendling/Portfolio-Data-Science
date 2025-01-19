@@ -92,10 +92,10 @@ pip install numpy scikit-learn matplotlib pillow
 
 2. **Training**:  
    - **Forward Pass**:
-     1. $ z_1 = XW_1 + b_1 $, $ a_1 = \text{sigmoid}(z_1) $  
-     2. $ z_2 = a_1W_2 + b_2 $, $ a_2 = \text{sigmoid}(z_2) $  
-     3. $ z_3 = a_2W_3 + b_3 $, $ \text{probs} = \text{softmax}(z_3) $
-   - **Loss**: Uses cross-entropy loss: $-\log(\text{probs}_{\text{true_class}})$.
+     1. $`z_1 = XW_1 + b_1`$, $`a_1 = \text{sigmoid}(z_1)`$  
+     2. $`z_2 = a_1W_2 + b_2`$, $`a_2 = \text{sigmoid}(z_2)`$  
+     3. $`z_3 = a_2W_3 + b_3`$, $`\text{probs} = \text{softmax}(z_3)`$
+   - **Loss**: Uses cross-entropy loss.
    - **Backpropagation** updates all three sets of weights (`W1`, `W2`, `W3`) and biases (`b1`, `b2`, `b3`) via gradient descent.
 
 3. **Prediction**:  
